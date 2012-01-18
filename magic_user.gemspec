@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = MagicUser::VERSION
   s.authors     = ["Michael Balsiger"]
   s.email       = ["michael.balsiger@swisscom.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/innovative-office/magic_user"
   s.summary     = %q{ActiveRecord extension}
   s.description = %q{Active Record automatically userstamps create and update operations if the table has fields named created_by or updated_by.}
   
