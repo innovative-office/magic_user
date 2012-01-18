@@ -12,3 +12,30 @@ Userstamping can be turned off by setting:
 Use Bundler to install Magic User:
 
     gem 'magic_user'
+
+== Usage
+
+At the moment you have to define User.current somewhere in your app...
+
+Do something like that:
+
+    class ApplicationController < ActionController::Base
+      before_filter :user_setup
+      
+      private
+      
+      def user_setup
+        User.current = current_user
+      end
+    end
+
+
+    class User < ActiveRecord::Base
+      def self.current=(user)
+        @current_user = user
+      end
+      
+      def self.current
+        @current_user
+      end
+    end
