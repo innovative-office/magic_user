@@ -8,8 +8,10 @@ Gem::Specification.new do |s|
   s.authors     = ["Michael Balsiger"]
   s.email       = ["michael.balsiger@swisscom.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{ActiveRecord extension}
+  s.description = %q{Active Record automatically userstamps create and update operations if the table has fields named created_by or updated_by.}
+  
+  s.required_ruby_version = '>= 1.8.7'
 
   s.rubyforge_project = "magic_user"
 

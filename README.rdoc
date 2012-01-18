@@ -1,0 +1,14 @@
+= Magic User -- A little Active Record extension 
+
+Active Record automatically userstamps create and update operations if the
+table has fields named created_by or updated_by.
+
+Userstamping can be turned off by setting:
+
+    config.active_record.record_userstamps = false
+
+== Download and installation
+
+Use Bundler to install Magic User:
+
+    gem 'magic_user'
